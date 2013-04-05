@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Fifteen Puzzle by Adriaan Sch&#246;lvinck</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+<body>
+
+	<header>
+		<h1>Fifteen Puzzle</h1>
+		<p>by<br/><a href='http://BALT.us' target='_blank'>Adriaan Sch&#246;lvinck</a> - <a href='mailto:adriaan@BALT.us' target='_blank'>adriaan@BALT.us</a> - <a href='http://linkedin.com/in/adriaans' target='_blank'>LinkedIn</a> - <a href='http://github.com/adriaanbalt' target='_blank'>GitHub</a></p>
+		<p>All browsers, IE9+</p>
+		<p>Touch support</p>
+	</header>
+
+	<section id='success' style='display:none;'>
+		<div class='inner'>
+			<h2>Congratulations!</h2>
+			<p>You have solved the Fifteen Puzzle, invented by Sam Loyd in the 1870s.</p>
+			<a id='restart' href='javascript:void(0);'>Want to <span>PLAY</span> again?</a>
+		</div>
+	</section>
+
+	<img id='source' src="spider.jpg"/>
+	<div id='fifteenPuzzle'></div>
+
+	<script src='CanBoardBeSolved.js'></script>
+	<script src='FifteenPuzzle.js'></script>
+
+</body>
+</html>

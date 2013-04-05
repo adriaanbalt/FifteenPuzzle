@@ -1,0 +1,117 @@
+
+/* Reset
+----------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+small { font-size: 85%; }
+
+/* self clear */
+.clearself:before, .clearself:after { content:" "; display:block; height:0; overflow:hidden; }
+.clearself:after { clear:both; }
+.clearself { zoom:1; } /* IE < 8 */
+
+/* Content
+----------------------------------------------------*/
+body {
+	display: none;
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+header{
+	margin: 2em;
+}
+h1 {
+	font-size: 3em;
+	margin: .25em;
+}
+h2 {
+	font-size: 2em;
+}
+p{
+	line-height: 1.5em;
+}
+.tile {
+	position: absolute;
+	cursor: pointer;
+	outline: 1px solid rgba(255,255,255,.5);
+}
+#fifteenPuzzle {
+	margin: 0 auto;
+	position: relative;
+}
+#source {
+	left: 50%;
+	margin-left: -320px;
+	position: absolute;
+	opacity: .25;
+}
+#success {
+	padding: 1em;
+	position: absolute;
+	width: 605px;
+	height: 640px;
+	left: 50%;
+	margin-left: -320px;
+	z-index: 50;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+}
+#success > .inner {
+	padding: 1em;
+	height: 575px;
+}
+#success h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+#success p {
+	margin-bottom: 1.25em;
+}
+#success a {
+	font-weight: 100;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 1em;
+	background: rgba( 255,0,0,.75);
+	display: block;
+}
+#success a:hover {
+	background: rgba( 0,0,0,.75);
+}
+#success a span {
+	font-size:20px;
+}
+
+/* Media Queries
+----------------------------------------------------*/
+@media only screen and (max-width :480px) {
+	h1 {
+		font-size: 2em;
+	}
+	p {
+		margin: 0 auto;
+		font-size: 14px;
+		width: 75%;
+	}
+}
